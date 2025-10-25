@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">  <title>Cadastro de Produto</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        form { width: 400px; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
+        input { width: 100%; padding: 8px; margin-bottom: 10px; box-sizing: border-box; }
+        input[type="submit"] { background-color: #4CAF50; color: white; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Formulário de Produto</h1>
+    <form action="/produto/inserir" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="preco">Preço:</label>
+        <input type="number" step="0.01" id="preco" name="preco" required>
+        
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" required>
+        
+        <input type="submit" value="Cadastrar Produto">
+    </form>
+</body>
+</html>
